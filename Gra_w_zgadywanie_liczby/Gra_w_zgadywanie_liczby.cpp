@@ -30,12 +30,12 @@ start:
 		else if (playerGuess > numberToGuess)
 		{
 			cout << "Wrong\n";
-			b = playerGuess;
+			if(playerGuess < b) b = playerGuess;
 		}
 		else if (playerGuess < numberToGuess)
 		{
 			cout << "Wrong\n";
-			a = playerGuess;
+			if(playerGuess > a) a = playerGuess;
 		}
 	}
 
@@ -56,7 +56,7 @@ int main()
 	Easy - Number betwen 1 and 100.
 	Medium - Number between 1 and 1000. 
 	Hard - number between 1 and 10000.
-	Custom - Player gives two numbers which represent Min and Max of random number
+	Work in Progress - Custom - Player gives two numbers which represent Min and Max of random number
 	*/
 beginning:
 	system("cls");
